@@ -216,7 +216,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="使用hexo新建、编辑并预览文章"><a href="#使用hexo新建、编辑并预览文章" class="headerlink" title="使用hexo新建、编辑并预览文章"></a><center>使用hexo新建、编辑并预览文章</h1><h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a><center>新建文章</h2><h3 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h3><pre><code>命令：hexo new [layout] title或 hexo n [layout] title
+          <h1 id="使用hexo新建、编辑并预览文章"><a href="#使用hexo新建、编辑并预览文章" class="headerlink" title="使用hexo新建、编辑并预览文章"></a><center>使用hexo新建、编辑并预览文章</center></h1><h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a><center>新建文章</center></h2><h3 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h3><pre><code>命令：hexo new [layout] title或 hexo n [layout] title
 </code></pre>
 <p>创建文章前要先选定模板，在hexo中也叫做布局。hexo支持三种布局（layout）：post(默认)、draft、page。我们先介绍如何使用已有布局，后面还将会介绍如何自定义布局。</p>
 <p>在博客目录下输入以下命令时，会默认使用post布局，然后自动在source_posts目录生成一个text1.md文件：</p>
@@ -261,9 +261,9 @@ title是可选的，是图片的标题。
 <li>为每一个文章创建一个资源文件夹，将图片保存其中，具体步骤如下：</li>
 <li>在博客根目录打开_config.yml文件做如下修改：yaml post_asset_folder: true</li>
 <li>然后使用hexo n text命令后创建一个使用post布局名为text的文章，</li>
-<li>你将发现hexo在\source_post文件夹下创建了一个\text文件夹以及同名的.md文件：<br><img src="/text/image.png" alt="Alt text"></li>
+<li>你将发现hexo在\source_post文件夹下创建了一个\text文件夹以及同名的.md文件：<br><img src="/.com//image.png" alt="Alt text"></li>
 </ul>
-<p>最后就可以打开text.md文件进行编辑了，你可以把要引用的图片放到同名文件夹下，然后使用相对路径进行引用。注意：请不要自作聪明将text.md文件移动到同名文件夹下，经本人尝试，发现这样会导致图片无法正常引用（如果有兴趣可以试试，成功了记得下@博主）。<br>Tip：如果你使用的是Typora编辑器，可以在编辑器的文件&#x2F;偏好设置&#x2F;图像中进行如下设置：<br><img src="/text/image-1.png" alt="Alt text"></p>
+<p>最后就可以打开text.md文件进行编辑了，你可以把要引用的图片放到同名文件夹下，然后使用相对路径进行引用。注意：请不要自作聪明将text.md文件移动到同名文件夹下，经本人尝试，发现这样会导致图片无法正常引用（如果有兴趣可以试试，成功了记得下@博主）。<br>Tip：如果你使用的是Typora编辑器，可以在编辑器的文件&#x2F;偏好设置&#x2F;图像中进行如下设置：<br><img src="/.com//image-1.png" alt="Alt text"></p>
 <p>这样你每次直接拷贝到文章的截图将会被自动保存到同名的文件夹下，非常方便~</p>
 <h3 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h3><pre><code>&lt;video width=&quot;480&quot; height=&quot;320&quot; controls&gt;
 &lt;source src=video_path&gt;
@@ -282,7 +282,7 @@ title是可选的，是图片的标题。
 <p>例如：</p>
 <blockquote><p>Quick Start</p>
 <footer><strong>luzhengli hello-world</strong><cite><a target="_blank" rel="noopener" href="https://luzhengli.github.io/2020/04/10/hello-world/">luzhengli.github.io/2020/04/10/hello-world</a></cite></footer></blockquote>
-<p>效果如下：<br><img src="/text/image-2.png" alt="Alt text"></p>
+<p>效果如下：<br><img src="/.com//image-2.png" alt="Alt text"></p>
 <p>还有一种简单的引用语法：</p>
 <pre><code>&gt; 这也是引用
 &gt;
@@ -290,16 +290,16 @@ title是可选的，是图片的标题。
 &gt;
 &gt; 饮用2
 </code></pre>
-<p>效果如下：<br><img src="/text/image-3.png" alt="Alt text"></p>
+<p>效果如下：<br><img src="/.com//image-3.png" alt="Alt text"></p>
 <h3 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h3><pre><code>&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;
     code snippet
     &#123;% endcodeblock %&#125;
 </code></pre>
 <p>上述形式写起来比较麻烦，我比较喜欢用另外一种语法：</p>
-<p><img src="/text/image-4.png" alt="Alt text"><br>例如：</p>
-<p><img src="/text/image-5.png" alt="Alt text"></p>
+<p><img src="/.com//image-4.png" alt="Alt text"><br>例如：</p>
+<p><img src="/.com//image-5.png" alt="Alt text"></p>
 <p>效果如下：</p>
-<p><img src="/text/image-6.png" alt="Alt text"><br>hexo还提供了一些标签插件支持你引用其他资源，如视频、iframe等。不过不常用，有兴趣的朋友可以自己了解下。</p>
+<p><img src="/.com//image-6.png" alt="Alt text"><br>hexo还提供了一些标签插件支持你引用其他资源，如视频、iframe等。不过不常用，有兴趣的朋友可以自己了解下。</p>
 <h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><p>编写好markdown文章后接下来就需要渲染、生成静态文件，启动本地端口查看效果了。</p>
 <pre><code>生成/删除静态文件
 生成静态文件命令：hexo generate或 hexo g
@@ -309,10 +309,10 @@ title是可选的，是图片的标题。
 <p>如果发生了一些错误，可以先删除静态文件，然后再重新生成。hexo g命令还提供了一个参数-f提供以类似效果。这样做的缺点就是当文章数变多以后渲染时间会更久一些。</p>
 <h3 id="启动本地端口"><a href="#启动本地端口" class="headerlink" title="启动本地端口"></a>启动本地端口</h3><p>命令：hexo server或 hexo s<br>生成静态文件之后，便要启动本地端口。然后访问命令行返回的地址便能在本地访问到博客了。</p>
 <p>效果如下：</p>
-<p><img src="/text/image-7.png" alt="Alt text"></p>
+<p><img src="/.com//image-7.png" alt="Alt text"></p>
 <h3 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h3><p>启用主题的步骤：</p>
 <ul>
-<li>在GitHub上克隆你喜欢的hexo主题到本地博客的根目录的theme文件夹下：git clone <url> themes&#x2F;<theme_name></li>
+<li>在GitHub上克隆你喜欢的hexo主题到本地博客的根目录的theme文件夹下：git clone <url> themes&#x2F;<theme_name></theme_name></url></li>
 <li>修改_config.yml文件的theme字段为下载好的主题名，例如：theme: yilia</li>
 <li>删除已有静态文件：hexo clean（为了避免可能的错误）</li>
 <li>重新生成静态文件：hexo g</li>
@@ -380,7 +380,7 @@ title是可选的，是图片的标题。
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="使用hexo新建、编辑并预览文章"><a href="#使用hexo新建、编辑并预览文章" class="headerlink" title="使用hexo新建、编辑并预览文章"></a><center>使用hexo新建、编辑并预览文章</h1><h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a><center>新建文章</h2><h3 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h3><pre><code>命令：hexo new [layout] title或 hexo n [layout] title
+          <h1 id="使用hexo新建、编辑并预览文章"><a href="#使用hexo新建、编辑并预览文章" class="headerlink" title="使用hexo新建、编辑并预览文章"></a><center>使用hexo新建、编辑并预览文章</center></h1><h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a><center>新建文章</center></h2><h3 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h3><pre><code>命令：hexo new [layout] title或 hexo n [layout] title
 </code></pre>
 <p>创建文章前要先选定模板，在hexo中也叫做布局。hexo支持三种布局（layout）：post(默认)、draft、page。我们先介绍如何使用已有布局，后面还将会介绍如何自定义布局。</p>
 <p>在博客目录下输入以下命令时，会默认使用post布局，然后自动在source_posts目录生成一个text1.md文件：</p>
@@ -425,9 +425,9 @@ title是可选的，是图片的标题。
 <li>为每一个文章创建一个资源文件夹，将图片保存其中，具体步骤如下：</li>
 <li>在博客根目录打开_config.yml文件做如下修改：yaml post_asset_folder: true</li>
 <li>然后使用hexo n text命令后创建一个使用post布局名为text的文章，</li>
-<li>你将发现hexo在\source_post文件夹下创建了一个\text文件夹以及同名的.md文件：<br><img src="/image.png" alt="Alt text"></li>
+<li>你将发现hexo在\source_post文件夹下创建了一个\text文件夹以及同名的.md文件：<br><img src="/.com//image.png" alt="Alt text"></li>
 </ul>
-<p>最后就可以打开text.md文件进行编辑了，你可以把要引用的图片放到同名文件夹下，然后使用相对路径进行引用。注意：请不要自作聪明将text.md文件移动到同名文件夹下，经本人尝试，发现这样会导致图片无法正常引用（如果有兴趣可以试试，成功了记得下@博主）。<br>Tip：如果你使用的是Typora编辑器，可以在编辑器的文件&#x2F;偏好设置&#x2F;图像中进行如下设置：<br><img src="/image-1.png" alt="Alt text"></p>
+<p>最后就可以打开text.md文件进行编辑了，你可以把要引用的图片放到同名文件夹下，然后使用相对路径进行引用。注意：请不要自作聪明将text.md文件移动到同名文件夹下，经本人尝试，发现这样会导致图片无法正常引用（如果有兴趣可以试试，成功了记得下@博主）。<br>Tip：如果你使用的是Typora编辑器，可以在编辑器的文件&#x2F;偏好设置&#x2F;图像中进行如下设置：<br><img src="/.com//image-1.png" alt="Alt text"></p>
 <p>这样你每次直接拷贝到文章的截图将会被自动保存到同名的文件夹下，非常方便~</p>
 <h3 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h3><pre><code>&lt;video width=&quot;480&quot; height=&quot;320&quot; controls&gt;
 &lt;source src=video_path&gt;
@@ -446,7 +446,7 @@ title是可选的，是图片的标题。
 <p>例如：</p>
 <blockquote><p>Quick Start</p>
 <footer><strong>luzhengli hello-world</strong><cite><a target="_blank" rel="noopener" href="https://luzhengli.github.io/2020/04/10/hello-world/">luzhengli.github.io/2020/04/10/hello-world</a></cite></footer></blockquote>
-<p>效果如下：<br><img src="/image-2.png" alt="Alt text"></p>
+<p>效果如下：<br><img src="/.com//image-2.png" alt="Alt text"></p>
 <p>还有一种简单的引用语法：</p>
 <pre><code>&gt; 这也是引用
 &gt;
@@ -454,16 +454,16 @@ title是可选的，是图片的标题。
 &gt;
 &gt; 饮用2
 </code></pre>
-<p>效果如下：<br><img src="/image-3.png" alt="Alt text"></p>
+<p>效果如下：<br><img src="/.com//image-3.png" alt="Alt text"></p>
 <h3 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h3><pre><code>&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;
     code snippet
     &#123;% endcodeblock %&#125;
 </code></pre>
 <p>上述形式写起来比较麻烦，我比较喜欢用另外一种语法：</p>
-<p><img src="/image-4.png" alt="Alt text"><br>例如：</p>
-<p><img src="/image-5.png" alt="Alt text"></p>
+<p><img src="/.com//image-4.png" alt="Alt text"><br>例如：</p>
+<p><img src="/.com//image-5.png" alt="Alt text"></p>
 <p>效果如下：</p>
-<p><img src="/image-6.png" alt="Alt text"><br>hexo还提供了一些标签插件支持你引用其他资源，如视频、iframe等。不过不常用，有兴趣的朋友可以自己了解下。</p>
+<p><img src="/.com//image-6.png" alt="Alt text"><br>hexo还提供了一些标签插件支持你引用其他资源，如视频、iframe等。不过不常用，有兴趣的朋友可以自己了解下。</p>
 <h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><p>编写好markdown文章后接下来就需要渲染、生成静态文件，启动本地端口查看效果了。</p>
 <pre><code>生成/删除静态文件
 生成静态文件命令：hexo generate或 hexo g
@@ -473,10 +473,10 @@ title是可选的，是图片的标题。
 <p>如果发生了一些错误，可以先删除静态文件，然后再重新生成。hexo g命令还提供了一个参数-f提供以类似效果。这样做的缺点就是当文章数变多以后渲染时间会更久一些。</p>
 <h3 id="启动本地端口"><a href="#启动本地端口" class="headerlink" title="启动本地端口"></a>启动本地端口</h3><p>命令：hexo server或 hexo s<br>生成静态文件之后，便要启动本地端口。然后访问命令行返回的地址便能在本地访问到博客了。</p>
 <p>效果如下：</p>
-<p><img src="/image-7.png" alt="Alt text"></p>
+<p><img src="/.com//image-7.png" alt="Alt text"></p>
 <h3 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h3><p>启用主题的步骤：</p>
 <ul>
-<li>在GitHub上克隆你喜欢的hexo主题到本地博客的根目录的theme文件夹下：git clone <url> themes&#x2F;<theme_name></li>
+<li>在GitHub上克隆你喜欢的hexo主题到本地博客的根目录的theme文件夹下：git clone <url> themes&#x2F;<theme_name></theme_name></url></li>
 <li>修改_config.yml文件的theme字段为下载好的主题名，例如：theme: yilia</li>
 <li>删除已有静态文件：hexo clean（为了避免可能的错误）</li>
 <li>重新生成静态文件：hexo g</li>
