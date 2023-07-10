@@ -272,7 +272,7 @@ title是可选的，是图片的标题。
 <li>为每一个文章创建一个资源文件夹，将图片保存其中，具体步骤如下：</li>
 <li>在博客根目录打开_config.yml文件做如下修改：yaml post_asset_folder: true</li>
 <li>然后使用hexo n text命令后创建一个使用post布局名为text的文章，</li>
-<li>你将发现hexo在\source_post文件夹下创建了一个\text文件夹以及同名的.md文件：<br><img src="/text/image.png" alt="Alt text"></li>
+<li>你将发现hexo在\source_post文件夹下创建了一个\text文件夹以及同名的.md文件：<br><img src=".../text/image.png" alt="Alt text"></li>
 </ul>
 <p>最后就可以打开text.md文件进行编辑了，你可以把要引用的图片放到同名文件夹下，然后使用相对路径进行引用。注意：请不要自作聪明将text.md文件移动到同名文件夹下，经本人尝试，发现这样会导致图片无法正常引用（如果有兴趣可以试试，成功了记得下@博主）。<br>Tip：如果你使用的是Typora编辑器，可以在编辑器的文件&#x2F;偏好设置&#x2F;图像中进行如下设置：<br><img src="/text/image-1.png" alt="Alt text"></p>
 <p>这样你每次直接拷贝到文章的截图将会被自动保存到同名的文件夹下，非常方便~</p>
