@@ -17,29 +17,33 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="使用hexo新建、编辑并预览文章新建文章文章命令：hexo new [layout] title或 hexo n [layout] title  创建文章前要先选定模板，在hexo中也叫做布局。hexo支持三种布局（layout）：post(默认)、draft、page。我们先介绍如何使用已有布局，后面还将会介绍如何自定义布局。 在博客目录下输入以下命令时，会默认使用post布局，然后自动在sou">
+  <meta name="description" content="这是一个编辑文章的教程，转载自网络">
 <meta property="og:type" content="article">
 <meta property="og:title" content="text">
 <meta property="og:url" content="http://example.com/2023/07/06/text/index.html">
 <meta property="og:site_name" content="陈某人">
-<meta property="og:description" content="使用hexo新建、编辑并预览文章新建文章文章命令：hexo new [layout] title或 hexo n [layout] title  创建文章前要先选定模板，在hexo中也叫做布局。hexo支持三种布局（layout）：post(默认)、draft、page。我们先介绍如何使用已有布局，后面还将会介绍如何自定义布局。 在博客目录下输入以下命令时，会默认使用post布局，然后自动在sou">
+<meta property="og:description" content="这是一个编辑文章的教程，转载自网络">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/.com//image.png">
-<meta property="og:image" content="http://example.com/.com//image-1.png">
-<meta property="og:image" content="http://example.com/.com//image-2.png">
-<meta property="og:image" content="http://example.com/.com//image-3.png">
-<meta property="og:image" content="http://example.com/.com//image-4.png">
-<meta property="og:image" content="http://example.com/.com//image-5.png">
-<meta property="og:image" content="http://example.com/.com//image-6.png">
-<meta property="og:image" content="http://example.com/.com//image-7.png">
+<meta property="og:image" content="http://example.com/2023/07/06/text/image.png">
+<meta property="og:image" content="http://example.com/2023/07/06/text/image.png">
+<meta property="og:image" content="http://example.com/2023/07/06/text/image-1.png">
+<meta property="og:image" content="http://example.com/2023/07/06/text/image-2.png">
+<meta property="og:image" content="http://example.com/2023/07/06/text/image-3.png">
+<meta property="og:image" content="http://example.com/2023/07/06/text/image-4.png">
+<meta property="og:image" content="http://example.com/2023/07/06/text/image-5.png">
+<meta property="og:image" content="http://example.com/2023/07/06/text/image-6.png">
+<meta property="og:image" content="http://example.com/2023/07/06/text/image-7.png">
+<meta property="og:image" content="http://example.com/2023/07/06/text/image_fenge.png">
 <meta property="article:published_time" content="2023-07-06T13:45:53.000Z">
-<meta property="article:modified_time" content="2023-07-06T13:51:02.097Z">
+<meta property="article:modified_time" content="2023-07-11T13:24:39.140Z">
 <meta property="article:author" content="陈某人">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="md">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/.com//image.png">
+<meta name="twitter:image" content="http://example.com/2023/07/06/text/image.png">
 
 <link rel="canonical" href="http://example.com/2023/07/06/text/">
 
@@ -112,6 +116,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -161,11 +166,38 @@
     <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -211,12 +243,28 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-07-06 21:45:53 / 修改时间：21:51:02" itemprop="dateCreated datePublished" datetime="2023-07-06T21:45:53+08:00">2023-07-06</time>
+              <time title="创建时间：2023-07-06 21:45:53" itemprop="dateCreated datePublished" datetime="2023-07-06T21:45:53+08:00">2023-07-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-11 21:24:39" itemprop="dateModified" datetime="2023-07-11T21:24:39+08:00">2023-07-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo-%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">hexo 博客</span></a>
+                </span>
             </span>
 
           
+            <div class="post-description">这是一个编辑文章的教程，转载自网络</div>
 
         </div>
       </header>
@@ -227,7 +275,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="使用hexo新建、编辑并预览文章"><a href="#使用hexo新建、编辑并预览文章" class="headerlink" title="使用hexo新建、编辑并预览文章"></a><center>使用hexo新建、编辑并预览文章</center></h1><h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a><center>新建文章</center></h2><h3 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h3><pre><code>命令：hexo new [layout] title或 hexo n [layout] title
+        <meta name="referrer" content="no-referrer">
+
+<h1 id="使用hexo新建、编辑并预览文章"><a href="#使用hexo新建、编辑并预览文章" class="headerlink" title="使用hexo新建、编辑并预览文章"></a><center>使用hexo新建、编辑并预览文章</center></h1><h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a><center>新建文章</center></h2><h3 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h3><pre><code>命令：hexo new [layout] title或 hexo n [layout] title
 </code></pre>
 <p>创建文章前要先选定模板，在hexo中也叫做布局。hexo支持三种布局（layout）：post(默认)、draft、page。我们先介绍如何使用已有布局，后面还将会介绍如何自定义布局。</p>
 <p>在博客目录下输入以下命令时，会默认使用post布局，然后自动在source_posts目录生成一个text1.md文件：</p>
@@ -272,17 +322,19 @@ title是可选的，是图片的标题。
 <li>为每一个文章创建一个资源文件夹，将图片保存其中，具体步骤如下：</li>
 <li>在博客根目录打开_config.yml文件做如下修改：yaml post_asset_folder: true</li>
 <li>然后使用hexo n text命令后创建一个使用post布局名为text的文章，</li>
-<li>你将发现hexo在\source_post文件夹下创建了一个\text文件夹以及同名的.md文件：<br><img src="/.com//image.png" alt="Alt text"></li>
+<li>你将发现hexo在\source_post文件夹下创建了一个\text文件夹以及同名的.md文件：<br><img src="/2023/07/06/text/image.png" alt="Alt text"><img src="/2023/07/06/text/image.png" alt="实验图片"></li>
 </ul>
-<p>最后就可以打开text.md文件进行编辑了，你可以把要引用的图片放到同名文件夹下，然后使用相对路径进行引用。注意：请不要自作聪明将text.md文件移动到同名文件夹下，经本人尝试，发现这样会导致图片无法正常引用（如果有兴趣可以试试，成功了记得下@博主）。<br>Tip：如果你使用的是Typora编辑器，可以在编辑器的文件&#x2F;偏好设置&#x2F;图像中进行如下设置：<br><img src="/.com//image-1.png" alt="Alt text"></p>
+<p>最后就可以打开text.md文件进行编辑了，你可以把要引用的图片放到同名文件夹下，然后使用相对路径进行引用。注意：请不要自作聪明将text.md文件移动到同名文件夹下，经本人尝试，发现这样会导致图片无法正常引用（如果有兴趣可以试试，成功了记得下@博主）。<br>Tip：如果你使用的是Typora编辑器，可以在编辑器的文件&#x2F;偏好设置&#x2F;图像中进行如下设置：<br><img src="/2023/07/06/text/image-1.png" alt="Alt text"></p>
 <p>这样你每次直接拷贝到文章的截图将会被自动保存到同名的文件夹下，非常方便~</p>
 <h3 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h3><pre><code>&lt;video width=&quot;480&quot; height=&quot;320&quot; controls&gt;
 &lt;source src=video_path&gt;
 &lt;/video&gt;
- &lt;video width=&quot;480&quot; height=&quot;320&quot; controls&gt;
-&lt;source src=video_path&gt;
-&lt;/video&gt;
 </code></pre>
+<video width="480" height="320" controls>
+    <source src="https://www.bilibili.com/video/BV1Bj411m772/?spm_id_from=333.1007.tianma.2-3-6.click&vd_source=3e25d859b67cdcf69ec724ba23ac75fe">
+</video>
+
+
 <p>video_path是视频的存储路径（含双引号），你可以把视频放在文章的同名资源文件夹下，然后用相对路径方式引用。<br>width和height是视频区块的宽度和高度，可自定义。</p>
 <h3 id="引用区块"><a href="#引用区块" class="headerlink" title="引用区块"></a>引用区块</h3><pre><code>&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;
     content...
@@ -293,7 +345,7 @@ title是可选的，是图片的标题。
 <p>例如：</p>
 <blockquote><p>Quick Start</p>
 <footer><strong>luzhengli hello-world</strong><cite><a target="_blank" rel="noopener" href="https://luzhengli.github.io/2020/04/10/hello-world/">luzhengli.github.io/2020/04/10/hello-world</a></cite></footer></blockquote>
-<p>效果如下：<br><img src="/.com//image-2.png" alt="Alt text"></p>
+<p>效果如下：<br><img src="/2023/07/06/text/image-2.png" alt="Alt text"></p>
 <p>还有一种简单的引用语法：</p>
 <pre><code>&gt; 这也是引用
 &gt;
@@ -301,16 +353,16 @@ title是可选的，是图片的标题。
 &gt;
 &gt; 饮用2
 </code></pre>
-<p>效果如下：<br><img src="/.com//image-3.png" alt="Alt text"></p>
+<p>效果如下：<br><img src="/2023/07/06/text/image-3.png" alt="Alt text"></p>
 <h3 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h3><pre><code>&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;
     code snippet
     &#123;% endcodeblock %&#125;
 </code></pre>
 <p>上述形式写起来比较麻烦，我比较喜欢用另外一种语法：</p>
-<p><img src="/.com//image-4.png" alt="Alt text"><br>例如：</p>
-<p><img src="/.com//image-5.png" alt="Alt text"></p>
+<p><img src="/2023/07/06/text/image-4.png" alt="Alt text"><br>例如：</p>
+<p><img src="/2023/07/06/text/image-5.png" alt="Alt text"></p>
 <p>效果如下：</p>
-<p><img src="/.com//image-6.png" alt="Alt text"><br>hexo还提供了一些标签插件支持你引用其他资源，如视频、iframe等。不过不常用，有兴趣的朋友可以自己了解下。</p>
+<p><img src="/2023/07/06/text/image-6.png" alt="Alt text"><br>hexo还提供了一些标签插件支持你引用其他资源，如视频、iframe等。不过不常用，有兴趣的朋友可以自己了解下。</p>
 <h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><p>编写好markdown文章后接下来就需要渲染、生成静态文件，启动本地端口查看效果了。</p>
 <pre><code>生成/删除静态文件
 生成静态文件命令：hexo generate或 hexo g
@@ -320,7 +372,7 @@ title是可选的，是图片的标题。
 <p>如果发生了一些错误，可以先删除静态文件，然后再重新生成。hexo g命令还提供了一个参数-f提供以类似效果。这样做的缺点就是当文章数变多以后渲染时间会更久一些。</p>
 <h3 id="启动本地端口"><a href="#启动本地端口" class="headerlink" title="启动本地端口"></a>启动本地端口</h3><p>命令：hexo server或 hexo s<br>生成静态文件之后，便要启动本地端口。然后访问命令行返回的地址便能在本地访问到博客了。</p>
 <p>效果如下：</p>
-<p><img src="/.com//image-7.png" alt="Alt text"></p>
+<p><img src="/2023/07/06/text/image-7.png" alt="Alt text"></p>
 <h3 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h3><p>启用主题的步骤：</p>
 <ul>
 <li>在GitHub上克隆你喜欢的hexo主题到本地博客的根目录的theme文件夹下：git clone <url> themes&#x2F;<theme_name></theme_name></url></li>
@@ -333,6 +385,7 @@ title是可选的，是图片的标题。
 <h3 id="再次部署"><a href="#再次部署" class="headerlink" title="再次部署"></a>再次部署</h3><p>命令：hexo deploy或 hexo d<br>部署之后等待一会就能通过公网访问到博客了。</p>
 <p>踩过的坑<br>部署到github时，仓库名称没有和github账户名一致（这里需要特别小心，账户名≠name）。举例来说，在github个人主页中，小字部分luzhengli才是账户名：</p>
 <p>部署后发现无法通过主域名访问，必须主域名+index.html才能访问。解决办法如下：<br>先查看github主目录是否有index.html<br>删掉.deploy_git文件夹<br>依次输入命令：hexo clean，hexo g，hexo d。<br>最后的大杀器：当遇到无法解决的问题时，可以直接把blog所在的博客目录删除！重新走一遍流程。</p>
+<h3 id="Hexo如何只在首页显示文章摘要"><a href="#Hexo如何只在首页显示文章摘要" class="headerlink" title="Hexo如何只在首页显示文章摘要"></a>Hexo如何只在首页显示文章摘要</h3><p><img src="/2023/07/06/text/image_fenge.png" alt="Alt text"></p>
 
     </div>
 
@@ -341,6 +394,10 @@ title是可选的，是图片的标题。
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/md/" rel="tag"># md</a>
+          </div>
 
         
 
@@ -348,10 +405,13 @@ title是可选的，是图片的标题。
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/07/06/C/" rel="prev" title="C">
-      <i class="fa fa-chevron-left"></i> C
+    <a href="/2023/07/03/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2023/07/11/Beautiful-Soup-4-4-0-%E6%96%87%E6%A1%A3/" rel="next" title="Beautiful Soup 4.4.0 文档">
+      Beautiful Soup 4.4.0 文档 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -410,7 +470,7 @@ title是可选的，是图片的标题。
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8hexo%E6%96%B0%E5%BB%BA%E3%80%81%E7%BC%96%E8%BE%91%E5%B9%B6%E9%A2%84%E8%A7%88%E6%96%87%E7%AB%A0"><span class="nav-number">1.</span> <span class="nav-text">使用hexo新建、编辑并预览文章</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-number">1.1.</span> <span class="nav-text">新建文章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E7%AB%A0"><span class="nav-number">1.1.1.</span> <span class="nav-text">文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8D%89%E7%A8%BF"><span class="nav-number">1.1.2.</span> <span class="nav-text">草稿</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%BE%91%E6%96%87%E7%AB%A0"><span class="nav-number">1.1.3.</span> <span class="nav-text">编辑文章</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">插入图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91"><span class="nav-number">1.1.4.</span> <span class="nav-text">插入视频</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E5%8C%BA%E5%9D%97"><span class="nav-number">1.1.5.</span> <span class="nav-text">引用区块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%8C%BA%E5%9D%97"><span class="nav-number">1.1.6.</span> <span class="nav-text">代码区块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88"><span class="nav-number">1.1.7.</span> <span class="nav-text">本地预览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E6%9C%AC%E5%9C%B0%E7%AB%AF%E5%8F%A3"><span class="nav-number">1.1.8.</span> <span class="nav-text">启动本地端口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98"><span class="nav-number">1.1.9.</span> <span class="nav-text">自定义主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%8D%E6%AC%A1%E9%83%A8%E7%BD%B2"><span class="nav-number">1.1.10.</span> <span class="nav-text">再次部署</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8hexo%E6%96%B0%E5%BB%BA%E3%80%81%E7%BC%96%E8%BE%91%E5%B9%B6%E9%A2%84%E8%A7%88%E6%96%87%E7%AB%A0"><span class="nav-number">1.</span> <span class="nav-text">使用hexo新建、编辑并预览文章</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-number">1.1.</span> <span class="nav-text">新建文章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E7%AB%A0"><span class="nav-number">1.1.1.</span> <span class="nav-text">文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8D%89%E7%A8%BF"><span class="nav-number">1.1.2.</span> <span class="nav-text">草稿</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%BE%91%E6%96%87%E7%AB%A0"><span class="nav-number">1.1.3.</span> <span class="nav-text">编辑文章</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">插入图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91"><span class="nav-number">1.1.4.</span> <span class="nav-text">插入视频</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E5%8C%BA%E5%9D%97"><span class="nav-number">1.1.5.</span> <span class="nav-text">引用区块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%8C%BA%E5%9D%97"><span class="nav-number">1.1.6.</span> <span class="nav-text">代码区块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88"><span class="nav-number">1.1.7.</span> <span class="nav-text">本地预览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E6%9C%AC%E5%9C%B0%E7%AB%AF%E5%8F%A3"><span class="nav-number">1.1.8.</span> <span class="nav-text">启动本地端口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98"><span class="nav-number">1.1.9.</span> <span class="nav-text">自定义主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%8D%E6%AC%A1%E9%83%A8%E7%BD%B2"><span class="nav-number">1.1.10.</span> <span class="nav-text">再次部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo%E5%A6%82%E4%BD%95%E5%8F%AA%E5%9C%A8%E9%A6%96%E9%A1%B5%E6%98%BE%E7%A4%BA%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81"><span class="nav-number">1.1.11.</span> <span class="nav-text">Hexo如何只在首页显示文章摘要</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -427,6 +487,18 @@ title是可选的，是图片的标题。
           <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -495,6 +567,10 @@ title是可选的，是图片的标题。
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 

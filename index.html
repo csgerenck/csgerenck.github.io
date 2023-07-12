@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="个人使用">
@@ -101,6 +101,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -150,11 +151,38 @@
     <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -173,6 +201,81 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/11/Beautiful-Soup-4-4-0-%E6%96%87%E6%A1%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="陈某人">
+      <meta itemprop="description" content="个人使用">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陈某人">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/07/11/Beautiful-Soup-4-4-0-%E6%96%87%E6%A1%A3/" class="post-title-link" itemprop="url">Beautiful Soup 4.4.0 文档</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-07-11 21:32:41 / 修改时间：22:00:12" itemprop="dateCreated datePublished" datetime="2023-07-11T21:32:41+08:00">2023-07-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%88%AC%E8%99%AB/" itemprop="url" rel="index"><span itemprop="name">爬虫</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Beautiful Soup 是一个可以从HTML或XML文件中提取数据的Python库.它能够通过你喜欢的转换器实现惯用的文档导航,查找,修改文档的方式.Beautiful Soup会帮你节省数小时甚至数天的工作时间.</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/07/11/Beautiful-Soup-4-4-0-%E6%96%87%E6%A1%A3/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -200,173 +303,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-07-06 21:45:53 / 修改时间：21:51:02" itemprop="dateCreated datePublished" datetime="2023-07-06T21:45:53+08:00">2023-07-06</time>
+              <time title="创建时间：2023-07-06 21:45:53" itemprop="dateCreated datePublished" datetime="2023-07-06T21:45:53+08:00">2023-07-06</time>
             </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="使用hexo新建、编辑并预览文章"><a href="#使用hexo新建、编辑并预览文章" class="headerlink" title="使用hexo新建、编辑并预览文章"></a><center>使用hexo新建、编辑并预览文章</center></h1><h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a><center>新建文章</center></h2><h3 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h3><pre><code>命令：hexo new [layout] title或 hexo n [layout] title
-</code></pre>
-<p>创建文章前要先选定模板，在hexo中也叫做布局。hexo支持三种布局（layout）：post(默认)、draft、page。我们先介绍如何使用已有布局，后面还将会介绍如何自定义布局。</p>
-<p>在博客目录下输入以下命令时，会默认使用post布局，然后自动在source_posts目录生成一个text1.md文件：</p>
-<pre><code>$ hexo n text1
-</code></pre>
-<p>当然你还可以指定布局：</p>
-<pre><code>$ hexo n [layout_name] draft1
-</code></pre>
-<p>该命令创建了一个使用特定布局的名为draft1的文章。</p>
-<p>打开之前创建的text1.md文件，我们可以看到文章开头包含以下内容：</p>
-<pre><code>---
-title: text1
-author: luyao
-date: 2020-04-10 04:13:36
-tags: hexo
-categories: blog
----
-</code></pre>
-<p>你显示的内容可能未必与我一样，不必担心，这是由于我自定义过。只需要知道，上面的内容在hexo被称作Front-matter，实际上就是该文章的一些变量，用于实现一些特定的功能。比如使author: luyao，那么渲染后的文章中将显示文章作者为luyao。</p>
-<p>如何自定义布局呢？实际上，布局是一个markdown文件，它们保存在scaffolds&#x2F;目录下，可以看到hexo自带的三种布局其实就是三个.md文件：</p>
-<p>而每一个文件中的内容实际只包含一个Front-matter。</p>
-<p>因此，你可以在这里修改布局或者建立新的布局，然后创建文章时使用这些布局。</p>
-<h3 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h3><pre><code>使用hexo n draft draft1命令将在source\目录下创建_drafts目录，并生成一个draft1.md文件。
-</code></pre>
-<p>当你编辑完草稿后，可以把文章推送到_posts目录下，通过下面的命令：</p>
-<pre><code>$ hexo publish &lt;file_name&gt;
-</code></pre>
-<p>可以使用hexo –draft命令可以查看已有草稿。</p>
-<p>想要在本地预览草稿的静态文件，也需要在生成静态文件时加上draft参数。</p>
-<h3 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h3><p>以下将介绍一些markdown语法。由于markdown在不同平台的实现略有不用，因此下面的内容只会介绍hexo默认支持的语法（特别基础的常用语法将不再说明，例如#）。此外，由于主题不同，不同机器显示效果也有会一定差异。</p>
-<p>以下是本人操作的环境：</p>
-<p>编辑器：typora<br>hexo主题：cactus</p>
-<h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><p>图片几乎是我们写博客时不可或缺的元素。在hexo中插入图片需要先进行一些设置，不过在介绍那之前让我们先回顾一下markdown引用图片的语法：</p>
-<pre><code>![alt](path [title])
-path是必选的，表示图片的路径，可使用绝对或相对路径。
-alt是可选的，是图片无法加载时的替代描述文本。
-title是可选的，是图片的标题。
-</code></pre>
-<p>在hexo中，引用图片不是简单的使用上述语法即可，你还需要为图片制定一个资源文件夹。具体来说，hexo中文章引用图片有两种方式：</p>
-<p>将所有文章的图片放到source&#x2F;images 文件夹中（没有就自己创建一个），然后使用markdown语句引用图片。这种方法一般适用于包含少量图片的hexo项目，但是当文章数量增多，图片数也随之增加后，该管理方式就显得有些混乱。因此我个人推荐你使用下面一种方法。</p>
-<ul>
-<li>为每一个文章创建一个资源文件夹，将图片保存其中，具体步骤如下：</li>
-<li>在博客根目录打开_config.yml文件做如下修改：yaml post_asset_folder: true</li>
-<li>然后使用hexo n text命令后创建一个使用post布局名为text的文章，</li>
-<li>你将发现hexo在\source_post文件夹下创建了一个\text文件夹以及同名的.md文件：<br><img src="/.com//image.png" alt="Alt text"></li>
-</ul>
-<p>最后就可以打开text.md文件进行编辑了，你可以把要引用的图片放到同名文件夹下，然后使用相对路径进行引用。注意：请不要自作聪明将text.md文件移动到同名文件夹下，经本人尝试，发现这样会导致图片无法正常引用（如果有兴趣可以试试，成功了记得下@博主）。<br>Tip：如果你使用的是Typora编辑器，可以在编辑器的文件&#x2F;偏好设置&#x2F;图像中进行如下设置：<br><img src="/.com//image-1.png" alt="Alt text"></p>
-<p>这样你每次直接拷贝到文章的截图将会被自动保存到同名的文件夹下，非常方便~</p>
-<h3 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h3><pre><code>&lt;video width=&quot;480&quot; height=&quot;320&quot; controls&gt;
-&lt;source src=video_path&gt;
-&lt;/video&gt;
- &lt;video width=&quot;480&quot; height=&quot;320&quot; controls&gt;
-&lt;source src=video_path&gt;
-&lt;/video&gt;
-</code></pre>
-<p>video_path是视频的存储路径（含双引号），你可以把视频放在文章的同名资源文件夹下，然后用相对路径方式引用。<br>width和height是视频区块的宽度和高度，可自定义。</p>
-<h3 id="引用区块"><a href="#引用区块" class="headerlink" title="引用区块"></a>引用区块</h3><pre><code>&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;
-    content...
-    &#123;% endblockquote %&#125;
-</code></pre>
-<blockquote><p>content…</p>
-<footer><strong>[author[</strong><cite>source]] [link] [source_link_title]</cite></footer></blockquote>   
-<p>例如：</p>
-<blockquote><p>Quick Start</p>
-<footer><strong>luzhengli hello-world</strong><cite><a target="_blank" rel="noopener" href="https://luzhengli.github.io/2020/04/10/hello-world/">luzhengli.github.io/2020/04/10/hello-world</a></cite></footer></blockquote>
-<p>效果如下：<br><img src="/.com//image-2.png" alt="Alt text"></p>
-<p>还有一种简单的引用语法：</p>
-<pre><code>&gt; 这也是引用
-&gt;
-&gt; 引用1
-&gt;
-&gt; 饮用2
-</code></pre>
-<p>效果如下：<br><img src="/.com//image-3.png" alt="Alt text"></p>
-<h3 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h3><pre><code>&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;
-    code snippet
-    &#123;% endcodeblock %&#125;
-</code></pre>
-<p>上述形式写起来比较麻烦，我比较喜欢用另外一种语法：</p>
-<p><img src="/.com//image-4.png" alt="Alt text"><br>例如：</p>
-<p><img src="/.com//image-5.png" alt="Alt text"></p>
-<p>效果如下：</p>
-<p><img src="/.com//image-6.png" alt="Alt text"><br>hexo还提供了一些标签插件支持你引用其他资源，如视频、iframe等。不过不常用，有兴趣的朋友可以自己了解下。</p>
-<h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><p>编写好markdown文章后接下来就需要渲染、生成静态文件，启动本地端口查看效果了。</p>
-<pre><code>生成/删除静态文件
-生成静态文件命令：hexo generate或 hexo g
-删除静态文件命令：hexo clean
-</code></pre>
-<p>正常情况下，每次启动本地端口前只需更新静态文件即可。Hexo引入了差分机制，如果 public 目录存在，那么 hexo g 只会重新生成改动的文件。</p>
-<p>如果发生了一些错误，可以先删除静态文件，然后再重新生成。hexo g命令还提供了一个参数-f提供以类似效果。这样做的缺点就是当文章数变多以后渲染时间会更久一些。</p>
-<h3 id="启动本地端口"><a href="#启动本地端口" class="headerlink" title="启动本地端口"></a>启动本地端口</h3><p>命令：hexo server或 hexo s<br>生成静态文件之后，便要启动本地端口。然后访问命令行返回的地址便能在本地访问到博客了。</p>
-<p>效果如下：</p>
-<p><img src="/.com//image-7.png" alt="Alt text"></p>
-<h3 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h3><p>启用主题的步骤：</p>
-<ul>
-<li>在GitHub上克隆你喜欢的hexo主题到本地博客的根目录的theme文件夹下：git clone <url> themes&#x2F;<theme_name></theme_name></url></li>
-<li>修改_config.yml文件的theme字段为下载好的主题名，例如：theme: yilia</li>
-<li>删除已有静态文件：hexo clean（为了避免可能的错误）</li>
-<li>重新生成静态文件：hexo g</li>
-<li>启动本地端口查看效果：hexo s</li>
-<li>重新部署：hexo d，稍等一段时间后刷新网页，发现主题生效<br>以上只是主题的启用方法，每个主题还支持许多个性化操作，这些内容需要详见主题的文档。</li>
-</ul>
-<h3 id="再次部署"><a href="#再次部署" class="headerlink" title="再次部署"></a>再次部署</h3><p>命令：hexo deploy或 hexo d<br>部署之后等待一会就能通过公网访问到博客了。</p>
-<p>踩过的坑<br>部署到github时，仓库名称没有和github账户名一致（这里需要特别小心，账户名≠name）。举例来说，在github个人主页中，小字部分luzhengli才是账户名：</p>
-<p>部署后发现无法通过主域名访问，必须主域名+index.html才能访问。解决办法如下：<br>先查看github主目录是否有index.html<br>删掉.deploy_git文件夹<br>依次输入命令：hexo clean，hexo g，hexo d。<br>最后的大杀器：当遇到无法解决的问题时，可以直接把blog所在的博客目录删除！重新走一遍流程。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/06/C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="陈某人">
-      <meta itemprop="description" content="个人使用">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="陈某人">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/07/06/C/" class="post-title-link" itemprop="url">C</a>
-        </h2>
-
-        <div class="post-meta">
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-11 21:24:39" itemprop="dateModified" datetime="2023-07-11T21:24:39+08:00">2023-07-11</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="far fa-folder"></i>
               </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-07-06 20:57:39 / 修改时间：21:41:51" itemprop="dateCreated datePublished" datetime="2023-07-06T20:57:39+08:00">2023-07-06</time>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo-%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">hexo 博客</span></a>
+                </span>
             </span>
 
           
@@ -380,113 +334,15 @@ title是可选的，是图片的标题。
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="使用hexo新建、编辑并预览文章"><a href="#使用hexo新建、编辑并预览文章" class="headerlink" title="使用hexo新建、编辑并预览文章"></a><center>使用hexo新建、编辑并预览文章</center></h1><h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a><center>新建文章</center></h2><h3 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h3><pre><code>命令：hexo new [layout] title或 hexo n [layout] title
-</code></pre>
-<p>创建文章前要先选定模板，在hexo中也叫做布局。hexo支持三种布局（layout）：post(默认)、draft、page。我们先介绍如何使用已有布局，后面还将会介绍如何自定义布局。</p>
-<p>在博客目录下输入以下命令时，会默认使用post布局，然后自动在source_posts目录生成一个text1.md文件：</p>
-<pre><code>$ hexo n text1
-</code></pre>
-<p>当然你还可以指定布局：</p>
-<pre><code>$ hexo n [layout_name] draft1
-</code></pre>
-<p>该命令创建了一个使用特定布局的名为draft1的文章。</p>
-<p>打开之前创建的text1.md文件，我们可以看到文章开头包含以下内容：</p>
-<pre><code>---
-title: text1
-author: luyao
-date: 2020-04-10 04:13:36
-tags: hexo
-categories: blog
----
-</code></pre>
-<p>你显示的内容可能未必与我一样，不必担心，这是由于我自定义过。只需要知道，上面的内容在hexo被称作Front-matter，实际上就是该文章的一些变量，用于实现一些特定的功能。比如使author: luyao，那么渲染后的文章中将显示文章作者为luyao。</p>
-<p>如何自定义布局呢？实际上，布局是一个markdown文件，它们保存在scaffolds&#x2F;目录下，可以看到hexo自带的三种布局其实就是三个.md文件：</p>
-<p>而每一个文件中的内容实际只包含一个Front-matter。</p>
-<p>因此，你可以在这里修改布局或者建立新的布局，然后创建文章时使用这些布局。</p>
-<h3 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h3><pre><code>使用hexo n draft draft1命令将在source\目录下创建_drafts目录，并生成一个draft1.md文件。
-</code></pre>
-<p>当你编辑完草稿后，可以把文章推送到_posts目录下，通过下面的命令：</p>
-<pre><code>$ hexo publish &lt;file_name&gt;
-</code></pre>
-<p>可以使用hexo –draft命令可以查看已有草稿。</p>
-<p>想要在本地预览草稿的静态文件，也需要在生成静态文件时加上draft参数。</p>
-<h3 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h3><p>以下将介绍一些markdown语法。由于markdown在不同平台的实现略有不用，因此下面的内容只会介绍hexo默认支持的语法（特别基础的常用语法将不再说明，例如#）。此外，由于主题不同，不同机器显示效果也有会一定差异。</p>
-<p>以下是本人操作的环境：</p>
-<p>编辑器：typora<br>hexo主题：cactus</p>
-<h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><p>图片几乎是我们写博客时不可或缺的元素。在hexo中插入图片需要先进行一些设置，不过在介绍那之前让我们先回顾一下markdown引用图片的语法：</p>
-<pre><code>![alt](path [title])
-path是必选的，表示图片的路径，可使用绝对或相对路径。
-alt是可选的，是图片无法加载时的替代描述文本。
-title是可选的，是图片的标题。
-</code></pre>
-<p>在hexo中，引用图片不是简单的使用上述语法即可，你还需要为图片制定一个资源文件夹。具体来说，hexo中文章引用图片有两种方式：</p>
-<p>将所有文章的图片放到source&#x2F;images 文件夹中（没有就自己创建一个），然后使用markdown语句引用图片。这种方法一般适用于包含少量图片的hexo项目，但是当文章数量增多，图片数也随之增加后，该管理方式就显得有些混乱。因此我个人推荐你使用下面一种方法。</p>
-<ul>
-<li>为每一个文章创建一个资源文件夹，将图片保存其中，具体步骤如下：</li>
-<li>在博客根目录打开_config.yml文件做如下修改：yaml post_asset_folder: true</li>
-<li>然后使用hexo n text命令后创建一个使用post布局名为text的文章，</li>
-<li>你将发现hexo在\source_post文件夹下创建了一个\text文件夹以及同名的.md文件：<br><img src="/.com//image.png" alt="Alt text"></li>
-</ul>
-<p>最后就可以打开text.md文件进行编辑了，你可以把要引用的图片放到同名文件夹下，然后使用相对路径进行引用。注意：请不要自作聪明将text.md文件移动到同名文件夹下，经本人尝试，发现这样会导致图片无法正常引用（如果有兴趣可以试试，成功了记得下@博主）。<br>Tip：如果你使用的是Typora编辑器，可以在编辑器的文件&#x2F;偏好设置&#x2F;图像中进行如下设置：<br><img src="/.com//image-1.png" alt="Alt text"></p>
-<p>这样你每次直接拷贝到文章的截图将会被自动保存到同名的文件夹下，非常方便~</p>
-<h3 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h3><pre><code>&lt;video width=&quot;480&quot; height=&quot;320&quot; controls&gt;
-&lt;source src=video_path&gt;
-&lt;/video&gt;
- &lt;video width=&quot;480&quot; height=&quot;320&quot; controls&gt;
-&lt;source src=video_path&gt;
-&lt;/video&gt;
-</code></pre>
-<p>video_path是视频的存储路径（含双引号），你可以把视频放在文章的同名资源文件夹下，然后用相对路径方式引用。<br>width和height是视频区块的宽度和高度，可自定义。</p>
-<h3 id="引用区块"><a href="#引用区块" class="headerlink" title="引用区块"></a>引用区块</h3><pre><code>&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;
-    content...
-    &#123;% endblockquote %&#125;
-</code></pre>
-<blockquote><p>content…</p>
-<footer><strong>[author[</strong><cite>source]] [link] [source_link_title]</cite></footer></blockquote>   
-<p>例如：</p>
-<blockquote><p>Quick Start</p>
-<footer><strong>luzhengli hello-world</strong><cite><a target="_blank" rel="noopener" href="https://luzhengli.github.io/2020/04/10/hello-world/">luzhengli.github.io/2020/04/10/hello-world</a></cite></footer></blockquote>
-<p>效果如下：<br><img src="/.com//image-2.png" alt="Alt text"></p>
-<p>还有一种简单的引用语法：</p>
-<pre><code>&gt; 这也是引用
-&gt;
-&gt; 引用1
-&gt;
-&gt; 饮用2
-</code></pre>
-<p>效果如下：<br><img src="/.com//image-3.png" alt="Alt text"></p>
-<h3 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h3><pre><code>&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;
-    code snippet
-    &#123;% endcodeblock %&#125;
-</code></pre>
-<p>上述形式写起来比较麻烦，我比较喜欢用另外一种语法：</p>
-<p><img src="/.com//image-4.png" alt="Alt text"><br>例如：</p>
-<p><img src="/.com//image-5.png" alt="Alt text"></p>
-<p>效果如下：</p>
-<p><img src="/.com//image-6.png" alt="Alt text"><br>hexo还提供了一些标签插件支持你引用其他资源，如视频、iframe等。不过不常用，有兴趣的朋友可以自己了解下。</p>
-<h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><p>编写好markdown文章后接下来就需要渲染、生成静态文件，启动本地端口查看效果了。</p>
-<pre><code>生成/删除静态文件
-生成静态文件命令：hexo generate或 hexo g
-删除静态文件命令：hexo clean
-</code></pre>
-<p>正常情况下，每次启动本地端口前只需更新静态文件即可。Hexo引入了差分机制，如果 public 目录存在，那么 hexo g 只会重新生成改动的文件。</p>
-<p>如果发生了一些错误，可以先删除静态文件，然后再重新生成。hexo g命令还提供了一个参数-f提供以类似效果。这样做的缺点就是当文章数变多以后渲染时间会更久一些。</p>
-<h3 id="启动本地端口"><a href="#启动本地端口" class="headerlink" title="启动本地端口"></a>启动本地端口</h3><p>命令：hexo server或 hexo s<br>生成静态文件之后，便要启动本地端口。然后访问命令行返回的地址便能在本地访问到博客了。</p>
-<p>效果如下：</p>
-<p><img src="/.com//image-7.png" alt="Alt text"></p>
-<h3 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h3><p>启用主题的步骤：</p>
-<ul>
-<li>在GitHub上克隆你喜欢的hexo主题到本地博客的根目录的theme文件夹下：git clone <url> themes&#x2F;<theme_name></theme_name></url></li>
-<li>修改_config.yml文件的theme字段为下载好的主题名，例如：theme: yilia</li>
-<li>删除已有静态文件：hexo clean（为了避免可能的错误）</li>
-<li>重新生成静态文件：hexo g</li>
-<li>启动本地端口查看效果：hexo s</li>
-<li>重新部署：hexo d，稍等一段时间后刷新网页，发现主题生效<br>以上只是主题的启用方法，每个主题还支持许多个性化操作，这些内容需要详见主题的文档。</li>
-</ul>
-<h3 id="再次部署"><a href="#再次部署" class="headerlink" title="再次部署"></a>再次部署</h3><p>命令：hexo deploy或 hexo d<br>部署之后等待一会就能通过公网访问到博客了。</p>
-<p>踩过的坑<br>部署到github时，仓库名称没有和github账户名一致（这里需要特别小心，账户名≠name）。举例来说，在github个人主页中，小字部分luzhengli才是账户名：</p>
-<p>部署后发现无法通过主域名访问，必须主域名+index.html才能访问。解决办法如下：<br>先查看github主目录是否有index.html<br>删掉.deploy_git文件夹<br>依次输入命令：hexo clean，hexo g，hexo d。<br>最后的大杀器：当遇到无法解决的问题时，可以直接把blog所在的博客目录删除！重新走一遍流程。</p>
-
+          <p>这是一个编辑文章的教程，转载自网络</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/07/06/text/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -641,6 +497,18 @@ title是可选的，是图片的标题。
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
   </nav>
 </div>
 
@@ -708,6 +576,10 @@ title是可选的，是图片的标题。
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 
