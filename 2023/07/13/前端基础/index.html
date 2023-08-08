@@ -1,0 +1,858 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="陈某人">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="前端技术入门（复习）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端基础">
+<meta property="og:url" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="陈某人个人纪录">
+<meta property="og:description" content="前端技术入门（复习）">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E7%BD%91%E9%A1%B5%E7%9A%84%E7%BB%84%E6%88%90.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E6%B5%8F%E8%A7%88%E5%99%A8.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/web%E6%A0%87%E5%87%86.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E5%9B%BE%E7%89%8745.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E9%B8%9F.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E5%A4%A7%E5%A4%B4%E5%84%BF%E5%AD%90.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E7%86%8A%E5%A4%A7.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E5%89%AA%E5%A4%B4.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E6%B2%A1%E6%9C%89%E8%AF%AD%E4%B9%89.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E8%AF%AD%E4%B9%89%E5%8C%96.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%A0%87%E7%AD%BE.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E5%9B%BE%E7%89%87%E5%B1%9E%E6%80%A7.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E8%B7%AF%E5%BE%84.png">
+<meta property="og:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6.png">
+<meta property="article:published_time" content="2023-07-13T13:38:04.000Z">
+<meta property="article:modified_time" content="2023-07-17T14:02:00.252Z">
+<meta property="article:author" content="陈某人">
+<meta property="article:tag" content="pink">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="入门">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E7%BD%91%E9%A1%B5%E7%9A%84%E7%BB%84%E6%88%90.png">
+  
+  
+  
+  <title>前端基础 - 陈某人个人纪录</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="前端基础"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-07-13 21:38" pubdate>
+          2023年7月13日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          40 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">前端基础</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="初识前端"><a href="#初识前端" class="headerlink" title="初识前端"></a><center>初识前端</center></h1><p>目标：主要是pc端网页布局</p>
+<h2 id="HTML第一天"><a href="#HTML第一天" class="headerlink" title="HTML第一天"></a>HTML第一天</h2><h3 id="我们接下来是进行的网页开发网页的相关概念"><a href="#我们接下来是进行的网页开发网页的相关概念" class="headerlink" title="我们接下来是进行的网页开发网页的相关概念:"></a>我们接下来是进行的网页开发网页的相关概念:</h3><ul>
+<li>什么是网页?</li>
+<li>什么是HTML?</li>
+<li>网页的形成?</li>
+</ul>
+<h2 id="什么是网页："><a href="#什么是网页：" class="headerlink" title="什么是网页："></a>什么是网页：</h2><pre><code class="hljs">1.网站是指在因特网上根据一定的规则，使用 HTML 等制作的用于展示特定内容相关的网页集合。
+2.网页是网站中的一“页”，通常是 HTML 格式的文件，它要通过浏览器来阅读。
+</code></pre>
+<h3 id="网页的组成："><a href="#网页的组成：" class="headerlink" title="网页的组成："></a>网页的组成：</h3><pre><code class="hljs">1.网页是构成网站的基本元素，它通常由图片、链接、文字、声音、视频等元素组成。通常我们看到
+的网页，常见以 .htm 或 .html 后缀结尾的文件，因此将其俗称为 HTML 文件。
+</code></pre>
+<p><img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E7%BD%91%E9%A1%B5%E7%9A%84%E7%BB%84%E6%88%90.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="什么是HTML："><a href="#什么是HTML：" class="headerlink" title="什么是HTML："></a>什么是HTML：</h3><pre><code class="hljs">1.HTML 指的是超文本标记语言 (Hyper Text Markup Language) ，它是用来描述网页的一种语言。
+2.HTML 不是一种编程语言，而是一种标记语言 (markup language)。
+标记语言是一套标记标签 (markup tag)。
+</code></pre>
+<h3 id="网页的总结："><a href="#网页的总结：" class="headerlink" title="网页的总结："></a>网页的总结：</h3><pre><code class="hljs">- 1.网页是图片、链接、文字、声音、视频等元素组成, 其实就是一个html文件(后缀名为html)
+- 2.网页生成制作:  有前端人员书写 HTML 文件, 然后浏览器打开,就能看到了网页.
+- 3.HTML: 超文本标记语言, 用来制作网页的一门语言. 有标签组成的. 比如 图片标签 链接标签 视频标签等…
+</code></pre>
+<h3 id="浏览器："><a href="#浏览器：" class="headerlink" title="浏览器："></a>浏览器：</h3><p><strong>常用的浏览器</strong></p>
+<ul>
+<li>IE</li>
+<li>火狐</li>
+<li>谷歌</li>
+<li>苹果</li>
+<li>欧朋</li>
+</ul>
+<ul>
+<li>浏览器是网页显示、运行的平台。常用的浏览器有 IE、火狐（Firefox）、谷歌（Chrome）、Safari和Opera等。平时称为五大浏览器。</li>
+<li>查看浏览器市场份额：<a target="_blank" rel="noopener" href="http://tongji.baidu.com/data/browser">http://tongji.baidu.com/data/browser</a><br>  <img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E6%B5%8F%E8%A7%88%E5%99%A8.png" srcset="/img/loading.gif" lazyload></li>
+</ul>
+<p><strong>浏览器内核（渲染引擎）</strong></p>
+<ul>
+<li>负责读取网页内容，整理讯息，计算网页的显示方式并显示页面<br>  <img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8.png" srcset="/img/loading.gif" lazyload></li>
+<li>目前国内一般浏览器都会采用 Webkit&#x2F;Blink 内核，如 360、UC、QQ、搜狗等。</li>
+</ul>
+<h2 id="web标准："><a href="#web标准：" class="headerlink" title="web标准："></a>web标准：</h2><ul>
+<li>Web 标准是由 W3C 组织和其他标准化组织制定的一系列标准的集合。W3C（万维网联盟）是国际最著名的标准化组织。</li>
+</ul>
+<h3 id="为什么需要Web标准："><a href="#为什么需要Web标准：" class="headerlink" title="为什么需要Web标准："></a>为什么需要Web标准：</h3><ul>
+<li><p>浏览器不同，它们显示页面或者排版就有些许差异<br>  <img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/web%E6%A0%87%E5%87%86.png" srcset="/img/loading.gif" lazyload></p>
+</li>
+<li><p>遵循 Web 标准除了可以让不同的开发人员写出的页面更标准、更统一外，还有以下优点：</p>
+<ul>
+<li>1.让 Web 的发展前景更广阔。 </li>
+<li>2.内容能被更广泛的设备访问。</li>
+<li>3.更容易被搜寻引擎搜索。</li>
+<li>4.降低网站流量费用。</li>
+<li>5.使网站更易于维护。</li>
+<li>6.提高页面浏览速度。</li>
+</ul>
+</li>
+</ul>
+<h2 id="web标准的构成："><a href="#web标准的构成：" class="headerlink" title="web标准的构成："></a>web标准的构成：</h2><pre><code class="hljs">主要包括 《结构Structure》 、《表现（Presentation）》和
+《行为（Behavior）》三个方面。
+</code></pre>
+<p><img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E5%9B%BE%E7%89%8745.png" srcset="/img/loading.gif" lazyload></p>
+<p>Web 标准提出的最佳体验方案：<strong>结构、样式、行为相分离</strong>。<br>简单理解：<strong>结构写到 HTML 文件中， 表现写到 CSS 文件中， 行为写到 JavaScript 文件中</strong></p>
+<p><img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E9%B8%9F.png" srcset="/img/loading.gif" lazyload></p>
+<p>1.结构类似身体</p>
+<p>2.表现类似外观装饰</p>
+<p>3.行为类似行为动作</p>
+<p>4.相比较而言, 三者中结构最重要.</p>
+<h2 id="HTML标签的导读："><a href="#HTML标签的导读：" class="headerlink" title="HTML标签的导读："></a>HTML标签的导读：</h2><h3 id="HTML语法规则："><a href="#HTML语法规则：" class="headerlink" title="HTML语法规则："></a>HTML语法规则：</h3><pre><code class="hljs">1.HTML 标签是由尖括号包围的关键词，例如 &lt;html&gt;。
+2.HTML 标签通常是成对出现的，例如 &lt;html&gt; 和 &lt;/html&gt; ，我们称为**双标签**。
+3.签。标签对中的第一个标签是开始标签，第二个标签是结束标签。 
+</code></pre>
+<p>有些特殊的标签必须是单个标签（极少情况），例如 <br>，我们称为<strong>单标签</strong>。<br>###标签的关系：<br>    双标签关系可以分为两类：包含关系和并列关系<br>    包含标签：</p>
+<pre><code class="hljs">    &lt;head&gt;  
+        &lt;title&gt; &lt;/title&gt; 
+    &lt;/head&gt;
+</code></pre>
+<p><img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E5%A4%A7%E5%A4%B4%E5%84%BF%E5%AD%90.png" srcset="/img/loading.gif" lazyload><br>    并列关系：</p>
+<pre><code class="hljs">     &lt;head&gt; &lt;/head&gt;
+     &lt;body&gt; &lt;/body&gt;
+</code></pre>
+<p><img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E7%86%8A%E5%A4%A7.png" srcset="/img/loading.gif" lazyload> </p>
+<h3 id="基本结构标签："><a href="#基本结构标签：" class="headerlink" title="基本结构标签："></a>基本结构标签：</h3><pre><code class="hljs">每个网页都会有一个基本的结构标签（也称为骨架标签），页面内容也是在这些基本标签上书写
+</code></pre>
+<p><img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84.png" srcset="/img/loading.gif" lazyload> </p>
+<h3 id="开发工具："><a href="#开发工具：" class="headerlink" title="开发工具："></a>开发工具：</h3><p>   <img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7.png" srcset="/img/loading.gif" lazyload><br>   <img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E5%89%AA%E5%A4%B4.png" srcset="/img/loading.gif" lazyload> </p>
+<p><strong>VSCode的使用：</strong></p>
+<ul>
+<li>1 双击打开软件。</li>
+<li>2 新建文件（Ctrl + N ）。</li>
+<li>3 保存（Ctrl + S ）, 注意移动要保存为 .html 文件</li>
+<li>4 Ctrl + 加号键 ，Ctrl + 减号键  可以放大缩小视图 </li>
+<li>5 生成页面骨架结构。 输入! 按下 Tab 键。 </li>
+<li>6 利用插件在浏览器中预览页面：单击鼠标右键，在弹出窗口中点击“Open In Default Browser”。<br><strong>DOCTYPE</strong><!DOCTYPE html>  文档类型声明标签,告诉浏览器这个页面采取html5版本来显示页面.<br><strong>lang 语言种类</strong><br>. 用来定义当前文档显示的语言。<br>. en定义语言为英语<br>. zh-CN定义语言为中文<br>. 简单来说,定义为en 就是英文网页, 定义为 zh-CN 就是中文网页<br>. 其实对于文档显示来说，定义成en的文档也可以显示中文，定义成zh-CN的文档也可以显示英文<br>. 这个属性对浏览器和搜索引擎(百度.谷歌等)还是有作用的<br><strong>字符集</strong><br>1.字符集 (Character set)是多个字符的集合。以便计算机能够识别和存储各种文字。<br>2.在&lt;head&gt;标签内，可以通过&lt;meta&gt; 标签的 charset 属性来规定 HTML 文档应该使用哪种字符编码。<br>3.&lt;meta charset&#x3D;” UTF-8” &#x2F;&gt;<br>4.charset 常用的值有：GB2312 、BIG5 、GBK 和 UTF-8，其中 UTF-8 也被称为万国码，基本包含了全世界所有国家需要用到的字符.<br>5.注意：上面语法是必须要写的代码，否则可能引起乱码的情况。一般情况下，统一使用“UTF-8”编码，尽量统一写成标准的 “UTF-8”，不要写成  “utf8” 或 “UTF8”。</li>
+</ul>
+<h3 id="语义化标签："><a href="#语义化标签：" class="headerlink" title="语义化标签："></a>语义化标签：</h3><pre><code class="hljs">学习标签是有技巧的，重点是记住每个标签的语义。简单理解就是指标签的含义，即这个标签是用来干嘛的。
+</code></pre>
+<h3 id="什么是语义化标签："><a href="#什么是语义化标签：" class="headerlink" title="什么是语义化标签："></a>什么是语义化标签：</h3><pre><code class="hljs">根据标签的语义，在合适的地方给一个最为合理的标签，可以让页面结构更清晰。
+下图没有语义化标签：
+</code></pre>
+<p><img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E6%B2%A1%E6%9C%89%E8%AF%AD%E4%B9%89.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="添加语义标签："><a href="#添加语义标签：" class="headerlink" title="添加语义标签："></a>添加语义标签：</h3><p><img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E8%AF%AD%E4%B9%89%E5%8C%96.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="常用的标签："><a href="#常用的标签：" class="headerlink" title="常用的标签："></a>常用的标签：</h3><h3 id="标题标签"><a href="#标题标签" class="headerlink" title="标题标签"></a>标题标签</h3><pre><code class="hljs">**标题标签 &lt;h1&gt; - &lt;h6&gt;（重要）**
+为了使网页更具有语义化，我们经常会在页面中用到标题标签。HTML 提供了 6 个等级的网页标题，即&lt;h1&gt; - &lt;h6&gt; 。
+具体实现：
+
+      &lt;h1&gt; 我是一级标题 &lt;/h1&gt;
+特点：
+1.加了标题的文字会变的加粗，字号也会依次变大。
+2. 一个标题独占一行。
+来！！！左边。。。右边。。。中间：
+    &lt;h1&gt;标题一共六级选,&lt;/h1&gt;
+    &lt;h2&gt;文字加粗一行显。&lt;/h2&gt;
+    &lt;h3&gt;由大到小依次减，&lt;/h3&gt;
+    &lt;h4&gt;从重到轻随之变。&lt;/h4&gt;
+    &lt;h5&gt;语法规范书写后，&lt;/h5&gt;
+    &lt;h6&gt;具体效果刷新见。&lt;/h6&gt;
+</code></pre>
+<p>　　                ——pink老师</p>
+<h3 id="段落标签："><a href="#段落标签：" class="headerlink" title="段落标签："></a>段落标签：</h3><pre><code class="hljs">在网页中，要把文字有条理地显示出来，就需要将这些文字分段显示。在 HTML 标签中，
+&lt;p&gt;标签用于定义段落，它可以将整个网页分为若干个段落。
+具体实现：
+
+     &lt;p&gt; 我是一个段落标签 &lt;/p&gt;
+特点：
+    1. 文本在一个段落中会根据浏览器窗口的大小自动换行。
+    2. 段落和段落之间保有空隙。
+</code></pre>
+<h3 id="换行标签"><a href="#换行标签" class="headerlink" title="换行标签"></a>换行标签</h3><pre><code class="hljs">在 HTML 中，一个段落中的文字会从左到右依次排列，直到浏览器窗口的右端，然后才自动换行。如果希望某段文本强制换行显示，就需要使用换行标签 &lt;br /&gt;。
+具体实现：
+
+      &lt;br /&gt;
+特点：
+    1. &lt;br /&gt; 是个单标签。
+    2. &lt;br /&gt; 标签只是简单地开始新的一行，跟段落不一样，段落之间会插入一些垂直的间距。
+</code></pre>
+<p>###文本格式化标签：<br>    在网页中，有时需要为文字设置粗体、斜体 或下划线等效果，这时就需要用到 HTML 中的文本格式化标签，使文字以特殊的方式显示。<br><img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%A0%87%E7%AD%BE.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="div和span标签"><a href="#div和span标签" class="headerlink" title="div和span标签"></a>div和span标签</h3><pre><code class="hljs">&lt;div&gt; 和 &lt;span&gt; 是没有语义的，它们就是一个盒子，用来装内容的。
+具体实现：
+     &lt;div&gt; 这是头部 &lt;/div&gt;    
+     &lt;span&gt; 今日价格 &lt;/span&gt;
+特点：
+    1. &lt;div&gt; 标签用来布局，但是现在一行只能放一个&lt;div&gt;。 大盒子
+    2. &lt;span&gt; 标签用来布局，一行上可以多个 &lt;span&gt;。小盒子
+</code></pre>
+<h3 id="图片标签："><a href="#图片标签：" class="headerlink" title="图片标签："></a>图片标签：</h3><pre><code class="hljs">在 HTML 标签中，&lt;img&gt; 标签用于定义 HTML 页面中的图像。
+具体实现：
+      &lt;img src=&quot;图像URL&quot; /&gt;
+解释：
+    src 是&lt;img&gt;标签的必须属性，它用于指定图像文件的路径和文件名。
+    所谓属性：简单理解就是属于这个图像标签的特性。
+图像标签的其他属性：
+</code></pre>
+<p><img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E5%9B%BE%E7%89%87%E5%B1%9E%E6%80%A7.png" srcset="/img/loading.gif" lazyload><br>​<br>    图像标签注意点：<br>        1.图像标签可以拥有多个属性，必须写在标签名的后面。<br>        2.属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。<br>        3.属性采取键值对的格式，即 key&#x3D;“value” 的格式，属性 &#x3D;“属性值”。</p>
+<h3 id="路径："><a href="#路径：" class="headerlink" title="路径："></a>路径：</h3><pre><code class="hljs">分为相对路径和绝对路径：
+    **路径之相对路径**
+    相对路径：以引用文件所在位置为参考基础，而建立出的目录路径。 
+    这里简单来说，图片相对于 HTML 页面的位置
+</code></pre>
+<p><img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E8%B7%AF%E5%BE%84.png" srcset="/img/loading.gif" lazyload><br>    特点：<br>        相对路径是从代码所在的这个文件出发，去寻找目标文件的，而我们这里所说的上一级 、下一级和同一级就是 图片相对于 HTML 页面的位置。<br>        路径之绝对路径：<br>            绝对路径：<br>            1.是指目录下的绝对位置，直接到达目标位置，通常是从盘符开始的路径。<br>            例如，“D:\web\img\logo.gif”或完整的网络地址“<a target="_blank" rel="noopener" href="http://www.itcast.cn/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/logo.gif%E2%80%9D">http://www.itcast.cn/前端基础/logo.gif”</a></p>
+<h3 id="链接标签："><a href="#链接标签：" class="headerlink" title="链接标签："></a>链接标签：</h3><pre><code class="hljs"> 链接的语法格式
+    &lt;a href=&quot;跳转目标&quot; target=&quot;目标窗口的弹出方式&quot;&gt; 文本或图像 &lt;/a&gt;
+属性：
+    1.href：用于指定链接目标的url地址
+    2.target:用于指定链接页面的打开方式_self默认值 _blank新窗口打开
+    3.#：空链接
+</code></pre>
+<p>链接分类：<br>    1.外部链接: 例如 &lt; a href&#x3D;”http:&#x2F;&#x2F; <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> “&gt; 百度&lt;&#x2F;a &gt;。<br>    2.内部链接:网站内部页面之间的相互链接. 直接链接内部页面名称即可，例如 &lt; a href&#x3D;”index.html”&gt; 首页 &lt;&#x2F;a &gt;。<br>    3.空链接: 如果当时没有确定链接目标时，&lt; a href&#x3D;”#”&gt; 首页 &lt;&#x2F;a &gt; 。<br>    4.下载链接: 如果 href 里面地址是一个文件或者压缩包，会下载这个文件。<br>    5.网页元素链接: 在网页中的各种网页元素，如文本、图像、表格、音频、视频等都可以添加超链接.<br>    6.锚点链接:  点我们点击链接,可以快速定位到页面中的某个位置. </p>
+<ul>
+<li><pre><code class="hljs">   在链接文本的 href 属性中，设置属性值为 #名字 的形式，如&lt;a href=&quot;#two&quot;&gt; 第2集 &lt;/a&gt; 
+</code></pre>
+</li>
+<li><pre><code class="hljs">   找到目标位置标签，里面添加一个 id 属性 = 刚才的名字 ，如：&lt;h3 id=&quot;two&quot;&gt;第2集介绍&lt;/h3&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><pre><code class="hljs">如果需要在 HTML 文档中添加一些便于阅读和理解但又不需要显示在页面中的注释文字，就需要使用注释标签。
+</code></pre>
+<p>HTML中的注释以&lt;!–”开头，以“ –&gt;”结束。<br>    具体实现：<br>         <!-- 注释语句 -->      快捷键: ctrl +  &#x2F;<br>    一句话: 注释标签里面的内容是给程序猿看的, 这个代码是不执行不显示到页面中的.<br>    添加注释是为了更好地解释代码的功能，便于相关开发人员理解和阅读代码，程序是不会执行注释内容的</p>
+<h3 id="特殊字符："><a href="#特殊字符：" class="headerlink" title="特殊字符："></a>特殊字符：</h3><pre><code class="hljs">在 HTML 页面中，一些特殊的符号很难或者不方便直接使用，此时我们就可以使用下面的字符来替代。
+</code></pre>
+<p><img src="/2023/07/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6.png" srcset="/img/loading.gif" lazyload><br>    重点记住：空格 、大于号、 小于号 这三个， 其余的使用很少，如果需要回头查阅即可。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/" class="category-chain-item">前端技术</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/HTML/" class="category-chain-item">HTML</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/pink/" class="print-no-link">#pink</a>
+      
+        <a href="/tags/html/" class="print-no-link">#html</a>
+      
+        <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="print-no-link">#学习笔记</a>
+      
+        <a href="/tags/%E5%85%A5%E9%97%A8/" class="print-no-link">#入门</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>前端基础</div>
+      <div>http://example.com/2023/07/13/前端基础/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>陈某人</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年7月13日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/07/17/html%E4%B8%AD%E7%A9%BA%E6%A0%BC%E7%9A%84%E5%86%99%E6%B3%95/" title="html中空格的写法">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">html中空格的写法</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/07/11/Beautiful-Soup-4-4-0-%E6%96%87%E6%A1%A3/" title="Beautiful Soup 4.4.0 文档">
+                        <span class="hidden-mobile">Beautiful Soup 4.4.0 文档</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
